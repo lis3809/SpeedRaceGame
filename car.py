@@ -2,19 +2,20 @@
 import random
 import pygame
 
+import game_config as config
+
 
 class Car:
+
     def __init__(self, game_surf, x, y, color):
         self.game_surf = game_surf
         self.x = x
         self.y = y
         self.color = color
-        self.dx = random.randint(0, 330)
-
-    w_car = 60
-    h_car = 100
-
-    dy = -100
+        self.dx = random.randint(0, config.WINDOW_SIZE[0] - config.W_CAR)
+        self.w_car = config.W_CAR - 10
+        self.h_car = config.H_CAR
+        self.dy = -config.H_CAR
 
     def draw(self):
         # Рисуем кузов
