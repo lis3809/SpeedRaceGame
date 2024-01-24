@@ -11,8 +11,8 @@ class RunGame:
     """Базовый класс для запуска игры Speed Race Game"""
 
     def __init__(self):
-        self.__GAME_RES_X = config.WINDOW_SIZE[0] * 0.5
-        self.__GAME_RES_Y = config.WINDOW_SIZE[1]
+        self.__GAME_RES_X = config.GAME_RES_X
+        self.__GAME_RES_Y = config.GAME_RES_Y
         self.__W_CAR = config.W_CAR
         self.__H_CAR = config.H_CAR
         self.__FPS = config.FPS  # Скорость обновления кадров

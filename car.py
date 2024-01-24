@@ -12,7 +12,7 @@ class Car:
         self.x = x
         self.y = y
         self.color = color
-        self.dx = random.randint(0, config.WINDOW_SIZE[0] - config.W_CAR)
+        self.dx = random.randint(0, config.GAME_RES_X - config.W_CAR)
         self.w_car = config.W_CAR - 10
         self.h_car = config.H_CAR
         self.dy = -config.H_CAR
